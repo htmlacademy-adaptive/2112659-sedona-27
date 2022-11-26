@@ -10,30 +10,32 @@
       <img src="img/logo.svg" width="185px" height="96px" alt="Логотип города Седона.">
     </a>
     <nav class="main-nav">
+      <svg class="main-nav_menu-logo" xmlns="http://www.w3.org/2000/svg" width="23px" height="22px" fill="none" viewBox="0 0 32 32">
+        <path fill="#81B3D2" d="M28 6H4v4h24V6ZM28 14H4v4h24v-4ZM28 22H4v4h24v-4Z"/>
+      </svg>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item site-list__item-active">
-            <a href="photo.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item" >
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="www.htmlacademy.com">
-              HTML ACADEMY
-            </a>
-          </li>
-        </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
       </div>
     </nav>
   </header>
@@ -64,82 +66,84 @@
     </section>
     <section class="photos">
       <div class="photos__wrapper">
-        <div class="photo-item">
-          <img class="photo__image" src="img/photo1.jpeg" width="280px" height="280px" alt="Фото просторов">
-          <p class="photo__title">
-            неродные просторы
-          </p>
-          <p class="photo__author">
-            Автор фото: Борис
-          </p>
-          <div class="like-wrapper">
-            <button class="like-btn">
-              <svg class="like_logo" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 32 32">
-                <path fill="#81B3D2" d="m17.4 9.6-.6 2.9-.6 2.5h8.7v2.1L22 24h-9V14l4.4-4.4ZM7 16v8-8ZM18.2 6l-6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7v-2h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM9 14H5v12h4V14Z"/>
-              </svg>
-            </button>
-            <p class="like-number">
-              1350
+        <ul class="photos__list">
+          <li class="photo-item">
+            <img class="photo__image" src="img/photo1.jpeg" width="280px" height="280px" alt="Фото просторов">
+            <p class="photo__title">
+              неродные просторы
             </p>
-          </div>
-        </div>
-        <div class="photo-item">
-          <img class="photo__image" src="img/photo2.jpeg" width="280px" height="280px" alt="Фото растительности Седоны">
-          <p class="photo__title">
-            Местная растительность
-          </p>
-          <p class="photo__author">
-            Автор фото: Сергей
-          </p>
-          <div class="like-wrapper">
-            <button class="like-btn">
-              <svg class="like_logo" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 32 32">
-                <path fill="#81B3D2" d="m17.4 9.6-.6 2.9-.6 2.5h8.7v2.1L22 24h-9V14l4.4-4.4ZM7 16v8-8ZM18.2 6l-6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7v-2h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM9 14H5v12h4V14Z"/>
-              </svg>
-            </button>
-            <p class="like-number">
-              143
+            <p class="photo__author">
+              Автор фото: Борис
             </p>
-          </div>
-        </div>
-        <div class="photo-item">
-          <img class="photo__image" src="img/photo3.jpeg" width="280px" height="280px" alt="Фото дороги на север">
-          <p class="photo__title">
-            Дорога на север
-          </p>
-          <p class="photo__author">
-            Автор фото: Петр
-          </p>
-          <div class="like-wrapper">
-            <button class="like-btn">
-              <svg class="like_logo" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 32 32">
-                <path fill="#81B3D2" d="m17.4 9.6-.6 2.9-.6 2.5h8.7v2.1L22 24h-9V14l4.4-4.4ZM7 16v8-8ZM18.2 6l-6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7v-2h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM9 14H5v12h4V14Z"/>
-              </svg>
-            </button>
-            <p class="like-number">
-              96
+            <div class="like-wrapper">
+              <button class="like-btn">
+                <svg class="like_logo" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 32 32">
+                  <path fill="#81B3D2" d="m17.4 9.6-.6 2.9-.6 2.5h8.7v2.1L22 24h-9V14l4.4-4.4ZM7 16v8-8ZM18.2 6l-6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7v-2h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM9 14H5v12h4V14Z"/>
+                </svg>
+              </button>
+              <p class="like-number">
+                1350
+              </p>
+            </div>
+          </li>
+          <li class="photo-item">
+            <img class="photo__image" src="img/photo2.jpeg" width="280px" height="280px" alt="Фото растительности Седоны">
+            <p class="photo__title">
+              Местная растительность
             </p>
-          </div>
-        </div>
-        <div class="photo-item">
-          <img class="photo__image" src="img/photo4.jpeg" width="280px" height="280px" alt="Фото Моста дьявола">
-          <p class="photo__title">
-            Мост дьявола
-          </p>
-          <p class="photo__author">
-            Автор фото: Антон
-          </p>
-          <div class="like-wrapper">
-            <button class="like-btn">
-              <svg class="like_logo" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 32 32">
-                <path fill="#81B3D2" d="m17.4 9.6-.6 2.9-.6 2.5h8.7v2.1L22 24h-9V14l4.4-4.4ZM7 16v8-8ZM18.2 6l-6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7v-2h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM9 14H5v12h4V14Z"/>
-              </svg>
-            </button>
-            <p class="like-number">
-              254
+            <p class="photo__author">
+              Автор фото: Сергей
             </p>
-          </div>
-        </div>
+            <div class="like-wrapper">
+              <button class="like-btn">
+                <svg class="like_logo" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 32 32">
+                  <path fill="#81B3D2" d="m17.4 9.6-.6 2.9-.6 2.5h8.7v2.1L22 24h-9V14l4.4-4.4ZM7 16v8-8ZM18.2 6l-6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7v-2h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM9 14H5v12h4V14Z"/>
+                </svg>
+              </button>
+              <p class="like-number">
+                143
+              </p>
+            </div>
+          </li>
+          <li class="photo-item">
+            <img class="photo__image" src="img/photo3.jpeg" width="280px" height="280px" alt="Фото дороги на север">
+            <p class="photo__title">
+              Дорога на север
+            </p>
+            <p class="photo__author">
+              Автор фото: Петр
+            </p>
+            <div class="like-wrapper">
+              <button class="like-btn">
+                <svg class="like_logo" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 32 32">
+                  <path fill="#81B3D2" d="m17.4 9.6-.6 2.9-.6 2.5h8.7v2.1L22 24h-9V14l4.4-4.4ZM7 16v8-8ZM18.2 6l-6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7v-2h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM9 14H5v12h4V14Z"/>
+                </svg>
+              </button>
+              <p class="like-number">
+                96
+              </p>
+            </div>
+          </li>
+          <li class="photo-item">
+            <img class="photo__image" src="img/photo4.jpeg" width="280px" height="280px" alt="Фото Моста дьявола">
+            <p class="photo__title">
+              Мост дьявола
+            </p>
+            <p class="photo__author">
+              Автор фото: Антон
+            </p>
+            <div class="like-wrapper">
+              <button class="like-btn">
+                <svg class="like_logo" xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none" viewBox="0 0 32 32">
+                  <path fill="#81B3D2" d="m17.4 9.6-.6 2.9-.6 2.5h8.7v2.1L22 24h-9V14l4.4-4.4ZM7 16v8-8ZM18.2 6l-6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7v-2h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM9 14H5v12h4V14Z"/>
+                </svg>
+              </button>
+              <p class="like-number">
+                254
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="video">
@@ -163,11 +167,9 @@
   </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="contacts">
           <p class="contacts__text">
             #visitSEDONA
           </p>
-        </div>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
