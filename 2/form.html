@@ -15,29 +15,28 @@
         <path fill="#81B3D2" d="M28 6H4v4h24V6ZM28 14H4v4h24v-4ZM28 22H4v4h24v-4Z"/>
       </svg>
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item" site-list__item--active>
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              HTML ACADEMY
-            </a>
-          </li>
-        </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
       </div>
     </nav>
   </header>
@@ -67,7 +66,7 @@
       </div>
     </section>
     <section class="feedback">
-      <form class="feedback__form">
+      <form class="feedback__form" method="post">
         <div class="feedback__form__wrapper">
           <div class="input__container">
             <p class="input-title">
@@ -129,7 +128,7 @@
             </p>
             <input class="emotions-feedback" type="text" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги">
           </div>
-          <button class="send-feedback-button button">ОТПРАВИТЬ ОТЗЫВ</button>
+          <button class="send-feedback-button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <small class="stats__legend">
             * — обязательные поля
           </small>
@@ -140,11 +139,9 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="contacts">
         <p class="contacts__text">
           #visitSEDONA
         </p>
-      </div>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
