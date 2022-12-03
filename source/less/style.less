@@ -1,1 +1,67 @@
 // Начните писать стили здесь
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/source/fonts/ptsansbold.woff2) format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/source/fonts/ptsans.woff2) format(woff2);
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@base-color: #81B3D2;
+@border-main: 1px solid #E5E5E5;
+
+@import url(./main_header.less);
+@import url(./main_hero.less);
+@import url(./main_booking.less);
+@import url(./main_map.less);
+@import url(./main_footer.less);
+@import url(./main_advantages.less);
+
+@import url(./photo_hero.less);
+@import url(./photo_photos.less);
+
+@import url(./form_hero.less);
+@import url(./form_form.less);
