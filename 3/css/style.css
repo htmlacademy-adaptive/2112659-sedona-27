@@ -59,7 +59,7 @@
   fill: #000000;
 }
 .hero-block__image {
-  background-image: url("/img/intro_bg.jpeg");
+  background-image: url("../img/intro_bg.jpeg");
   background-size: cover;
   background-position: center;
   width: 320px;
@@ -149,7 +149,7 @@
   border-bottom: 1px solid #e5e5e5;
 }
 .pages-hero-block__image {
-  background-image: url("/img/intro_bg.jpeg");
+  background-image: url("../img/intro_bg.jpeg");
   background-size: cover;
   background-position: top;
   width: 320px;
@@ -360,14 +360,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/source/fonts/ptsansbold.woff2") format(woff2);
+  src: url("../source/fonts/ptsansbold.woff2") format(woff2);
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/source/fonts/ptsans.woff2") format(woff2);
+  src: url("../source/fonts/ptsans.woff2") format(woff2);
   font-display: swap;
 }
 html {
