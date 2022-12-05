@@ -1,1 +1,108 @@
 // Начните писать стили здесь
+@import url("index.less");
+@import url("photo.less");
+@import url("feedback.less");
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../source/fonts/ptsansbold.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../source/fonts/ptsans.woff2") format(woff2);
+  font-display: swap;
+}
+
+@border-main: 1px solid #e5e5e5;
+
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.emphased-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &--small {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.menu-button {
+  background-color: #81b3d2;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &--down {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button {
+  border: none;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--disabled {
+    background-color: #e5e5e5;
+  }
+
+  &--can-touch {
+    cursor: pointer;
+  }
+}
