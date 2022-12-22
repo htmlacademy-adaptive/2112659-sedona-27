@@ -21,6 +21,12 @@
 
 @border-main: 1px solid #e5e5e5;
 
+// Viewports
+
+@tablet-width: 768px;
+@desktop-width: 1280px;
+// @mobile-width-only: 767px;
+
 html {
   height: 100%;
 }
@@ -49,6 +55,8 @@ html {
   margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100%;
   width: 100%;
 }
@@ -66,6 +74,12 @@ html {
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .emphased-text {
+    font-size: 21px;
   }
 }
 
