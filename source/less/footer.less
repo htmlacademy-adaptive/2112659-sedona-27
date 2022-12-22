@@ -1,3 +1,15 @@
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-footer__hashtag {
+  margin: 0;
+}
+
 .social {
   list-style-type: none;
   margin: 0;
@@ -29,7 +41,7 @@
 .social__link {
   padding: 12px;
 
-  &--logo-centered {
+  &--only-logo {
     display: flex;
     align-items: center;
   }
@@ -39,6 +51,16 @@
   fill: #ffffff;
 }
 
-.copyright__logo--dark {
+.copyright {
+  &--lined {
+    display: flex;
+  }
+}
+
+.copyright__text {
+  margin: 0;
+}
+
+.copyright__link__logo--dark {
   fill: #000000;
 }
